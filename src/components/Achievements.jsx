@@ -15,7 +15,7 @@ const achievements = [
   {
     icon: GraduationCap,
     title: 'Academic Excellence',
-    description: 'Final year BCA student at EXIS Institute with consistent academic performance',
+    description: 'Final year BCA student at Axis Colleges with consistent academic performance',
     metric: 'BCA',
     label: 'Final Year',
     color: 'from-purple-500 to-pink-600',
