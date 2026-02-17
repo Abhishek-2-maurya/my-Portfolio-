@@ -7,7 +7,7 @@ const aboutCards = [
   {
     icon: GraduationCap,
     title: 'Education',
-    description: 'BCA Final Year Student at EXIS Institute of Higher Education. Focused on building a strong academic foundation in computer science.',
+    description: 'BCA Final Year Student at Axis Institute of Higher Education. Focused on building a strong academic foundation in computer science.',
   },
   {
     icon: Target,
