@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { ExternalLink, Github, Home, BookOpen, CheckSquare } from 'lucide-react';
+import { ExternalLink, Github, Home, BookOpen, CheckSquare, GraduationCap } from 'lucide-react';
 import { Button } from './ui/button';
 
 const projects = [
@@ -26,6 +26,17 @@ const projects = [
     live: null,
     featured: true,
     color: 'from-purple-500 to-pink-600',
+  },
+  {
+    title: 'EduPrep360',
+    subtitle: 'Comprehensive Learning Platform',
+    description: 'An interactive educational platform designed to streamline student preparation with dynamic study materials, progress tracking, and accessible resources.',
+    techStack: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind'],
+    icon: GraduationCap,
+    github: 'https://github.com/Abhishek-2-maurya/EduPrep360',
+    live: 'https://edu-prep360.vercel.app/',
+    featured: false,
+    color: 'from-indigo-500 to-blue-500',
   },
   {
     title: 'To-Do App',
@@ -81,9 +92,7 @@ export const Projects = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 * index }}
-              className={`group relative rounded-2xl overflow-hidden ${
-                project.featured && index === 0 ? 'md:col-span-2 lg:col-span-2 lg:row-span-2' : ''
-              }`}
+              className="group relative rounded-2xl overflow-hidden"
               data-testid={`project-card-${index}`}
             >
               <div className="glass border border-white/10 rounded-2xl h-full p-8 flex flex-col hover:border-white/20 transition-all duration-300">
